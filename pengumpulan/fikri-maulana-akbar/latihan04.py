@@ -16,6 +16,22 @@
 # else:
 #     print("D")
 
+
+# username = "Admin"
+# password = 123
+
+# user = input("Masukkan username: ")
+# pw = int(input("Masukkan password: "))
+
+# if user == username:
+#     if pw == password:
+#         print("Login Berhasil")
+#     else:
+#         print("Login Gagal")
+# else:
+#     print("Login Gagal")
+
+
 # nama = input("Masukkan nama siswa: ")
 # nilai = int(input("Masukkan nilai siswa: "))
 
@@ -39,25 +55,26 @@
 
 # print("================")
 
-nama = input("Masukkan nama: ")
-nilai_teori = int(input("Masukkan nilai ujian teori: "))
-nilai_praktek = int(input("Masukkan nilai ujian praktek: "))
 
-print("===== HASIL UJIAN SIM =====")
-print("Nama: ",nama)
-print("Nilai teori: ",nilai_teori)
-print("Nilai praktek: ",nilai_praktek)
+# nama = input("Masukkan nama: ")
+# nilai_teori = int(input("Masukkan nilai ujian teori: "))
+# nilai_praktek = int(input("Masukkan nilai ujian praktek: "))
 
-if nilai_teori > 90:
-    if nilai_praktek > 90:
-        print("Status: Lulus")
-    else:
-        print("Status: Lulus Bersyarat")
+# print("===== HASIL UJIAN SIM =====")
+# print("Nama: ",nama)
+# print("Nilai teori: ",nilai_teori)
+# print("Nilai praktek: ",nilai_praktek)
 
-else:
-    if nilai_praktek > 90:
-        print("Status: Lulus Bersyarat")
-    else:
-        print("Status: Tidak Lulus")
+# if nilai_teori > 90:
+#     if nilai_praktek > 90:
+#         print("Status: Lulus")
+#     else:
+#         print("Status: Lulus Bersyarat")
 
-print("==========================")
+# else:
+#     if nilai_praktek > 90:
+#         print("Status: Lulus Bersyarat")
+#     else:
+#         print("Status: Tidak Lulus")
+
+# print("==========================")
