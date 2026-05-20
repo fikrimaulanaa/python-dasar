@@ -16,3 +16,13 @@
 # print("====================")
 
 # print(180-(360-((180-derajat)+120+90)))
+
+
+# derajat = int(input("Masukkan sudut: "))
+# a = 180-derajat
+# b = 135
+# c = 90
+# d = 360-(a+b+c)
+# x = 180-d
+
+# print(f"Hasil sudut: {x} derajat")
