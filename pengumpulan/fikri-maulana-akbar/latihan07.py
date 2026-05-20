@@ -16,19 +16,42 @@
 # print("Jumlah siswa yang lulus: ",x)
 
 
-barang = {
-    "pensil" : 2000,
-    "buku" : 5000,
-    "tas" : 20000
-}
+# barang = {
+#     "pensil" : 2000,
+#     "buku" : 5000,
+#     "tas" : 20000
+# }
 
-total = 0
+# total = 0
 
-for k in barang:
-    print(k)
+# for k in barang:
+#     print(k)
 
-for k in barang:
-    print(barang[k])
-    total += barang[k]
+# for k in barang:
+#     print(barang[k])
+#     total += barang[k]
 
-print("Total harga barang: ",total)
+# print("Total harga barang: ",total)
+
+data = [
+    {"nama": "Andi", "nilai": 80, "kelas": "7A"},
+    {"nama": "Budi", "nilai": 60, "kelas": "7A"},
+    {"nama": "Citra", "nilai": 90, "kelas": "7B"}
+]
+
+for siswa in data:
+    print(siswa["nama"]," - ",siswa["nilai"]," - ",siswa["kelas"])
+
+for siswa in data:
+    if siswa["nilai"] >= 75:
+        print(siswa["nama"],": Lulus")
+
+tertinggi = 0
+nama_tertinggi = ""
+
+for siswa in data:
+    if siswa["nilai"] > tertinggi:
+        tertinggi = siswa["nilai"]
+        nama_tertinggi = siswa["nama"]
+
+print("nilai tertinggi: ",nama_tertinggi,"-",tertinggi)
