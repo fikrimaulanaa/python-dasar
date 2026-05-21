@@ -8,16 +8,16 @@
 #     print(angka*i)
 
 
-# jumlah_siswa = int(input("Masukkan jumlah siswa: "))
-# i = 0
-# total = 0
+jumlah_siswa = int(input("Masukkan jumlah siswa: "))
+i = 0
+total = 0
 
-# while i <= jumlah_siswa-1:
-#     i += 1
-#     nilai_siswa = int(input("Masukkan nilai siswa: "))
-#     total += nilai_siswa
+while i <= jumlah_siswa-1:
+    i += 1
+    nilai_siswa = int(input("Masukkan nilai siswa: "))
+    total += nilai_siswa
 
-# print("Total: ",total)
+print("Total: ",total)
 
 
 # angka = None
