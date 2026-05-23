@@ -11,22 +11,34 @@ def menu():
 
 menu()
 
+
+def cek_lulus(nilai):
+    if nilai >= 75:
+        return "Lulus"
+    else:
+        return "Tidak Lulus"
+
 def tampil_data():
-    for i in data:
-        print(i["nama"],"-",i["kelas"],"-",i["nilai"])
+    if len(data) != 0:
+        for i, item in enumerate(data):
+            print(i+1,".",item["nama"],"-",item["kelas"],"-",item["nilai"],cek_lulus(item["nilai"]))
+    else:
+        print("Data tidak ditemukan")        
 
 def tambah_data(nama, kelas, nilai):
     data.append({"nama": nama, "kelas": kelas, "nilai": nilai})
 
-def hapus_data(nama):
-    # for x, y, z in enumerate(data):
+def hapus_data():
     for x in data:
-        if x["nama"]==nama:
-            # print("a")
-            index =
-            data.pop(index)
-            # data.remove(x["kelas"])
-            # data.remove(x["nilai"])
+        tampil_data()
+        index = int(input("Masukkan nomor data yang ingin dihapus: "))-1
+        if 0 <= index < len(data):
+            del data[index]
+            print("Data berhasil dihapus")
+        else:
+            print("Data tidak ditemukan")
+
+            
 
 while True:
     x = input("Masukkan pilihan: ")
@@ -37,12 +49,11 @@ while True:
     elif x == "2":
         nama = input("Masukkan nama: ")
         kelas = input("Masukkan kelas: ")
-        nilai = input("Masukkan nilai: ")
+        nilai = int(input("Masukkan nilai: "))
         tambah_data(nama, kelas, nilai)
         menu()
     elif x == "3":
-        nama = input("Masukkan nama:")
-        hapus_data(nama)
+        hapus_data()
         menu()
     elif x =="4":
         break
